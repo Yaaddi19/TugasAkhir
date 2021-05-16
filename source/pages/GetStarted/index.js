@@ -1,6 +1,7 @@
 import React from 'react'
 import { ImageBackground, StyleSheet, Text, View } from 'react-native'
 import { ILGetStarted } from '../../assets'
+import { Gap } from '../../component/atom'
 import Button from '../../component/atom/Button'
 
 export default function GetStarted() {
@@ -11,7 +12,7 @@ export default function GetStarted() {
             </View>
             <View>
                 <Button title="Get Started" />
-                <View style={{height : 16}} />
+                <Gap height={16}/>
                 <Button type="secondary" title="Sign In" />
             </View>
         </ImageBackground>
