@@ -9,7 +9,7 @@ const Stack = createStackNavigator();
 
 const Route = () => {
     return (
-        <Stack.Navigator initialRouteName="Splash">
+        <Stack.Navigator initialRouteName="GetStarted">
             <Stack.Screen name="Splash" 
             component={Splash}
             options={{headerShown: false}}/>
