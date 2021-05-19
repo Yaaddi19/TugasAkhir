@@ -3,7 +3,9 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { GetStarted, 
     Splash,
     Register, 
-    Login} from '../pages';
+    Login,
+    UploadFoto,
+    } from '../pages';
 
 const Stack = createStackNavigator();
 
@@ -21,6 +23,9 @@ const Route = () => {
             options={{headerShown: false}}/>
             <Stack.Screen name="Login" 
             component={Login}
+            options={{headerShown: false}}/>
+            <Stack.Screen name="UploadFoto" 
+            component={UploadFoto}
             options={{headerShown: false}}/>
         </Stack.Navigator>
     )

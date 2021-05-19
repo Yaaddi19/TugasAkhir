@@ -3,6 +3,7 @@ import { ImageBackground, StyleSheet, Text, View } from 'react-native'
 import { ILGetStarted } from '../../assets'
 import { Gap } from '../../component/atom'
 import Button from '../../component/atom/Button'
+import { colors } from '../../utils/colors'
 
 export default function GetStarted({navigation}) {
     return (
@@ -24,7 +25,7 @@ export default function GetStarted({navigation}) {
 
 const styles = StyleSheet.create({
     page : {
-        backgroundColor : 'white',
+        backgroundColor : colors.white,
         padding : 40,
         justifyContent : 'space-between',
         flex : 1,

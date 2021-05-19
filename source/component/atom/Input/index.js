@@ -1,6 +1,8 @@
 import React from 'react'
 import { StyleSheet, Text, TextInput, View } from 'react-native'
 import { colors } from '../../../utils/colors'
+import { fonts } from '../../../utils/fonts'
+
 
 export default function Input({title}) {
     return (
@@ -16,12 +18,12 @@ const styles = StyleSheet.create({
         borderWidth : 1,
         borderRadius : 10,
         borderColor : colors.border,
-        padding : 12,
+        padding : 12, 
     },
     textInput : {
         fontSize : 16,
         marginBottom : 7,
-        fontFamily : 'Nunito-Regular',
+        fontFamily : fonts.primary[400],
         color : colors.text.secondary,
 
     }

@@ -4,10 +4,10 @@ import { Button, Gap, Input } from '../../component/atom'
 import Header from '../../component/molecul/Header'
 import { colors } from '../../utils/colors'
 
-export default function Register() {
+export default function Register({navigation}) {
     return (
         <View style={styles.page}>
-            <Header />
+            <Header onPress={() => navigation.goBack()} title="Daftar Akun" />
             <View style={styles.container}>
             <Input title="Full Name" />
             <Gap height={24} />
@@ -17,7 +17,8 @@ export default function Register() {
             <Gap height={24} />
             <Input title="Password" />
             <Gap height={55} />
-            <Button title="Continue" />
+            <Button title="Continue"
+            onPress={() => navigation.navigate('UploadFoto')} />
             </View>
         </View>
     )

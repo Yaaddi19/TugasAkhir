@@ -2,6 +2,7 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { ICTimbangan } from '../../assets'
 import { Button, Gap, Input, Link } from '../../component/atom'
+import { colors } from '../../utils/colors'
 
 export default function Login() {
     return (
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
     page : {
         padding : 40,
         paddingTop: 100,
-        backgroundColor : 'white',
+        backgroundColor : colors.white ,
         flex : 1,
     }
 })
