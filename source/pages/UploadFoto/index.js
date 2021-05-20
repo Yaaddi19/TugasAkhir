@@ -22,7 +22,8 @@ export default function UploadFoto({navigation}) {
                     <Text style={styles.textprofesi}>Mahasiswa</Text>
                 </View>
                 <View>
-                    <Button title="Upload and Continue" />
+                    <Button title="Upload and Continue"
+                    onPress={() => navigation.replace('HomeApp') } />
                         <Gap height={30}/>
                     <Link title="Skip for this" 
                     align='center'
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
     containerprofile : {
         flex : 1,
         justifyContent : 'center',
-        alignItems : 'center'
+        alignItems : 'center',
     },
     containerfoto : {
         height : 130,

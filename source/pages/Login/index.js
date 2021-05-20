@@ -4,7 +4,7 @@ import { ICTimbangan } from '../../assets'
 import { Button, Gap, Input, Link } from '../../component/atom'
 import { colors } from '../../utils/colors'
 
-export default function Login() {
+export default function Login({navigation}) {
     return (
         <View style={styles.page}>
             <ICTimbangan />
@@ -16,7 +16,8 @@ export default function Login() {
             <Link title="Forgot My Password" 
             size={12} />
             <Gap height={65} />
-            <Button title="Sign In" />
+            <Button title="Sign In" 
+            onPress={() => navigation.replace('HomeApp')} />
             <Gap height={110} />
             <Link title="Create New Account" 
             size={16}
