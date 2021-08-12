@@ -3,13 +3,15 @@ import GetStarted from './GetStarted';
 import Register from './Register';
 import Login from './Login';
 import UploadFoto from './UploadFoto';
-import Lawyers from './Lawyers';
+import Home from './Home';
 import Messages from './Messages';
+import Location from './Location';
 
 export { Splash,
 GetStarted,
 Register,
 Login,
 UploadFoto,
-Lawyers,
-Messages, }
+Home,
+Messages,
+Location, }

@@ -24,7 +24,7 @@ const styles = StyleSheet.create({
     container : {
         flex : 1,
         backgroundColor : colors.white,
-        borderRadius : -20,
-
+        borderBottomLeftRadius : 20,
+        borderBottomRightRadius : 20
     }
 })

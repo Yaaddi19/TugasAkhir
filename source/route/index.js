@@ -6,8 +6,9 @@ import { GetStarted,
     Register, 
     Login,
     UploadFoto,
-    Lawyers,
+    Home,
     Messages,
+    Location
     } from '../pages';
 import { BottomNavigator } from '../component/molecul';
 
@@ -17,17 +18,19 @@ const BottomTab = createBottomTabNavigator();
 const HomeApp = () => {
     return (
         <BottomTab.Navigator tabBar={props => <BottomNavigator {...props}/>}>
-            <BottomTab.Screen name="Lawyers"
-            component={Lawyers} />
+            <BottomTab.Screen name="Home"
+            component={Home} />
              <BottomTab.Screen name="Messages"
             component={Messages} />
+             <BottomTab.Screen name="Location"
+            component={Location} />
         </BottomTab.Navigator>
     )
 }
 
 const Route = () => {
     return (
-        <Stack.Navigator initialRouteName="HomeApp">
+        <Stack.Navigator initialRouteName="GetStarted">
             <Stack.Screen name="Splash" 
             component={Splash}
             options={{headerShown: false}}/>

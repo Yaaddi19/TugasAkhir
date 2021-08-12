@@ -1,10 +1,10 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-export default function Lawyers() {
+export default function ListLocation() {
     return (
         <View>
-            <Text>Lawyers pages</Text>
+            <Text>List Location</Text>
         </View>
     )
 }

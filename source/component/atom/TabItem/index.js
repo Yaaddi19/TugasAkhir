@@ -1,18 +1,21 @@
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { ICLawyers, ICLawyersActive, ICMessage, ICMessageActive } from '../../../assets'
+import { ICFace, ICMessenger, ICMessengerActive, ICFaceActive, ICLocation, ICLocationActive, } from '../../../assets'
 import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'
 
 export default function Tabitem({title, active, onPress, onLongPress}) {
     const Icon = () => {
-        if ( title === 'Lawyers') {
-            return active ? <ICLawyersActive/> : <ICLawyers />
+        if ( title === 'Home') {
+            return active ? <ICFaceActive/> : <ICFace />
         }
         if (title === 'Messages') {
-        return active ? <ICMessageActive/> : <ICMessage />
+        return active ? <ICMessengerActive/> : <ICMessenger />
         }
-        return <ICMessage />
+        if (title === 'Location') {
+            return active ? <ICLocationActive/> : <ICLocation />
+        }
+        return <ICFace />
     }
     return (
         <TouchableOpacity 
