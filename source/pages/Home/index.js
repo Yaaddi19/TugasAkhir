@@ -1,14 +1,22 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-import ListHome from '../../component/molecul/ListHome'
-import { colors } from '../../utils/colors'
+import React from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { DoctorCategory, HomeProfile, NewsItem, RatedDoctor } from '../../component/molecul';
+import { colors } from '../../utils/colors';
 
 export default function Home() {
     return (
         <View style={styles.page}>
-            <ListHome />
-            <ListHome />
-            <ListHome />
+            <HomeProfile/>
+                <Text>Mau Konsultansi dengan siapa hari ini ?</Text>
+                <DoctorCategory/>
+                <DoctorCategory/>
+                <Text>Top Rated Doctor</Text>
+                <RatedDoctor/>
+                <RatedDoctor/>
+                <Text>Good News</Text>
+                <NewsItem/>
+                <NewsItem/>
+                <NewsItem/>
         </View>
     )
 }
