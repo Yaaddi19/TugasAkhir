@@ -8,6 +8,8 @@ import ICFace from './icon_face.svg';
 import ICFaceActive from './icon_face_active.svg';
 import ICLocation from './icon_maps.svg';
 import ICLocationActive from './icon_maps_active.svg';
+import ICCat from './icon_cat.svg';
+import ICDog from './icon_dog.svg';
 
 export {ICTimbangan,
     ICBackDark,
@@ -18,4 +20,6 @@ ICMessengerActive,
 ICFaceActive,
 ICFace,
 ICLocation,
-ICLocationActive};
+ICLocationActive,
+ICCat,
+ICDog,};
