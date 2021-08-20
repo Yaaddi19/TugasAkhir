@@ -10,28 +10,34 @@ export default function Home() {
         <View style={styles.page}>
             <View style={styles.container}>
             <ScrollView showsVerticalScrollIndicator={false}>
-            <Gap height={30} />
-            <HomeProfile/>
+            <View style={styles.wrapperSection}>
+                <Gap height={30} />
+                <HomeProfile/>
                 <Text style={styles.welcome}>Mau Konsultansi dengan siapa hari ini ?</Text>
+            </View>
                 <View style={styles.wrapper}>
                 <ScrollView horizontal showsHorizontalScrollIndicator={false} >
                     <View style={styles.category}>
-                        <Gap width={16} />
+                        <Gap width={32} />
                         <DoctorCategory/>
                         <DoctorCategory/>
-                        <Gap width={5} />
+                        <DoctorCategory/>
+                        <Gap width={21} />
                     </View>
                 </ScrollView>
                 </View>
-                <Text style={styles.label}>Top Rated Doctor</Text>
-                <RatedDoctor/>
-                <RatedDoctor/>
-                <Text style={styles.label} >Good News</Text>
+                <View style={styles.wrapperSection}>
+                    <Text style={styles.label}>Top Rated Doctor</Text>
+                    <RatedDoctor/>
+                    <RatedDoctor/>
+                    <RatedDoctor/>
+                    <Text style={styles.label} >Good News</Text>
+                </View>
                 <NewsItem/>
                 <NewsItem/>
                 <NewsItem/>
                 <Gap height={30} />
-                </ScrollView>
+            </ScrollView>
                 </View>
         </View>
     )
@@ -45,7 +51,6 @@ const styles = StyleSheet.create({
     container : {
         backgroundColor : colors.white,
         flex : 1,
-        paddingHorizontal : 16,
         borderBottomLeftRadius : 20,
         borderBottomRightRadius : 20,
     },
@@ -59,6 +64,9 @@ const styles = StyleSheet.create({
     },
     category : {
         flexDirection : 'row',
+    },
+    wrapperSection : {
+        paddingHorizontal : 16,
     },
     wrapper : {
         marginHorizontal : -15
