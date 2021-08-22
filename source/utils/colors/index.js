@@ -4,7 +4,7 @@ const mainColors = {
     white1 : '#FCFCFC',
     dark1 : '#112340',
     gray1 : '#7D8797',
-    gray2 : '#E9E9E9',
+    gray2 : '#EEEEEE',
     black1 : '#201E1E',
     green1 : '#A4EAE6',
     
