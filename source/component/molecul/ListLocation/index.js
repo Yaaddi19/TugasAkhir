@@ -1,17 +1,16 @@
 import React from 'react'
 import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native'
-import { DummyHospital1, ILHospitalBG } from '../../../assets'
 import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'
 
-export default function ListLocation() {
+export default function ListLocation({hospital, name, address, pic}) {
     return (
         <View style={styles.container}>
-            <Image source={DummyHospital1} style={styles.avatar}/>
+            <Image source={pic} style={styles.avatar}/>
             <View>
-            <Text style={styles.title}>Klink Hewan</Text>
-            <Text style={styles.title}>Tomang Pulo</Text>
-            <Text style={styles.address}>Jln. Tomang Raya</Text>
+            <Text style={styles.title}>{hospital}</Text>
+            <Text style={styles.title}>{name}</Text>
+            <Text style={styles.address}>{address}</Text>
             </View>
         </View>
     )

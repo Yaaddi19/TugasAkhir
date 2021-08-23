@@ -1,6 +1,6 @@
 import React from 'react'
 import { ImageBackground, StyleSheet, Text, View } from 'react-native'
-import { ILHospitalBG } from '../../assets'
+import { DummyHospital1, ILHospitalBG } from '../../assets'
 import ListLocation from '../../component/molecul/ListLocation'
 import { colors } from '../../utils/colors'
 import { fonts } from '../../utils/fonts'
@@ -12,7 +12,10 @@ export default function Location() {
                 <Text style={styles.title}>Rumah Sakit Tersedia</Text>
             </ImageBackground>
             <View style={styles.container}>
-                <ListLocation/>
+                <ListLocation hospital="Klinik Hewan" 
+                name="Tomang Pulo" 
+                address="Jln. Tomang Raya"
+                pic={DummyHospital1} />
             </View>
         </View>
     )
