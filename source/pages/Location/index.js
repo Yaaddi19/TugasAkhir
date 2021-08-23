@@ -12,7 +12,8 @@ export default function Location() {
                 <Text style={styles.title}>Rumah Sakit Tersedia</Text>
             </ImageBackground>
             <View style={styles.container}>
-                <ListLocation hospital="Klinik Hewan" 
+                <ListLocation
+                hospital="Klinik Hewan" 
                 name="Tomang Pulo" 
                 address="Jln. Tomang Raya"
                 pic={DummyHospital1} />

@@ -1,16 +1,15 @@
 import React from 'react'
 import { Image, StyleSheet, Text, View } from 'react-native'
-import { DummyDoctor1 } from '../../../assets'
 import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'
 
-export default function ListMessages() {
+export default function ListMessages({profile, name, desc}) {
     return (
         <View style={styles.container}>
-            <Image source={DummyDoctor1} style={styles.avatar}/>
+            <Image source={profile} style={styles.avatar}/>
             <View style={styles.section}>
-                <Text style={styles.name}>Dicky</Text>
-                <Text style={styles.desc}>Terima kasih atas wakt...</Text>
+                <Text style={styles.name}>{name}</Text>
+                <Text style={styles.desc}>{desc}</Text>
             </View>
         </View>
     )

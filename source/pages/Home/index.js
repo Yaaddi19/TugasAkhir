@@ -9,22 +9,22 @@ export default function Home() {
     return (
         <View style={styles.page}>
             <View style={styles.container}>
-            <ScrollView showsVerticalScrollIndicator={false}>
-            <View style={styles.wrapperSection}>
-                <Gap height={30} />
-                <HomeProfile/>
-                <Text style={styles.welcome}>Mau Konsultansi dengan siapa hari ini ?</Text>
-            </View>
-                <View style={styles.wrapper}>
-                <ScrollView horizontal showsHorizontalScrollIndicator={false} >
-                    <View style={styles.category}>
-                        <Gap width={32} />
-                        <DoctorCategory/>
-                        <DoctorCategory/>
-                        <DoctorCategory/>
-                        <Gap width={21} />
+                <ScrollView showsVerticalScrollIndicator={false}>
+                    <View style={styles.wrapperSection}>
+                        <Gap height={30} />
+                        <HomeProfile/>
+                        <Text style={styles.welcome}>Mau Konsultansi dengan siapa hari ini ?</Text>
                     </View>
-                </ScrollView>
+                <View style={styles.wrapper}>
+                    <ScrollView horizontal showsHorizontalScrollIndicator={false} >
+                        <View style={styles.category}>
+                            <Gap width={32} />
+                            <DoctorCategory/>
+                            <DoctorCategory/>
+                            <DoctorCategory/>
+                            <Gap width={21} />
+                        </View>
+                    </ScrollView>
                 </View>
                 <View style={styles.wrapperSection}>
                     <Text style={styles.label}>Top Rated Doctor</Text>
