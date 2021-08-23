@@ -1,17 +1,25 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
-import { Colors } from 'react-native/Libraries/NewAppScreen'
 import { ICCat, ICDog } from '../../../assets'
 import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'
 
-export default function DoctorCategory() {
+export default function DoctorCategory({category}) {
+    const Icon = () => {
+    if (category === 'dokter kucing'){
+        return <ICCat style={styles.illustration} />
+    }
+    if (category === 'dokter anjing'){
+        return <ICDog style={styles.illustration} />
+    }
+    return <ICCat style={styles.illustration} />
+    }
     return (
         <View style={styles.container}>
-            <ICCat style={styles.illustration}/>
+            <Icon />
             <View>
             <Text style={styles.label}>Saya butuh</Text>
-            <Text style={styles.category}>dokter kucing</Text>
+            <Text style={styles.category}>{category}</Text>
             </View>
         </View>
     )

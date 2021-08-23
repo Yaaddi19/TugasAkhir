@@ -1,0 +1,12 @@
+{
+    "data": [
+        {
+            "id" : 1,
+            "category" : "dokter kucing"
+        },
+        {
+            "id" : 2,
+            "category" : "dokter anjing"
+        }
+    ]
+}

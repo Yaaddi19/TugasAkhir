@@ -4,6 +4,7 @@ import { Gap } from '../../component/atom';
 import { DoctorCategory, HomeProfile, NewsItem, RatedDoctor } from '../../component/molecul';
 import { colors } from '../../utils/colors';
 import { fonts } from '../../utils/fonts';
+import { JSONCategoryDoctor } from '../../assets';
 
 export default function Home() {
     return (
@@ -19,9 +20,15 @@ export default function Home() {
                     <ScrollView horizontal showsHorizontalScrollIndicator={false} >
                         <View style={styles.category}>
                             <Gap width={32} />
-                            <DoctorCategory/>
-                            <DoctorCategory/>
-                            <DoctorCategory/>
+                            {
+                                JSONCategoryDoctor.data.map(item => {
+                                    return (
+                                        <DoctorCategory 
+                                        key={item.id}
+                                        category={item.category}/>
+                                    )
+                                })
+                            }
                             <Gap width={21} />
                         </View>
                     </ScrollView>
