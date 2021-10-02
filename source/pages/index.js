@@ -7,6 +7,7 @@ import Home from './Home';
 import Messages from './Messages';
 import Location from './Location';
 import ChooseDoctor from './ChooseDoctor';
+import Chatting from './Chatting';
 
 
 export { Splash,
@@ -17,4 +18,5 @@ UploadFoto,
 Home,
 Messages,
 Location,
-ChooseDoctor, }
+ChooseDoctor,
+Chatting, }

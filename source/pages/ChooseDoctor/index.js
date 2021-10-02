@@ -14,7 +14,8 @@ export default function ChooseDoctor({navigation}) {
             type = "next" 
             profile={DummyDoctor1}
             name="Dicky"
-            desc="Pria" />
+            desc="Pria"
+            onPress={() => navigation.navigate('Chatting')} />
             <ListMessages 
             type = "next" 
             profile={DummyDoctor1}

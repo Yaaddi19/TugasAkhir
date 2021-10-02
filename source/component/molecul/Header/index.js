@@ -29,6 +29,6 @@ const styles = StyleSheet.create({
         flex : 1,
         fontSize : 20,
         fontFamily : fonts.primary[600] ,
-        color : type === 'homeapp' ? colors.white : colors.text.primary,
+        color : type === 'homeapp' ? 'white' : colors.text.primary,
     }),
 })

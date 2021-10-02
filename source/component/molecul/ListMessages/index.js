@@ -1,12 +1,12 @@
 import React from 'react'
-import { Image, StyleSheet, Text, View } from 'react-native'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { ICNext } from '../../../assets'
 import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'
 
-export default function ListMessages({profile, name, desc, type}) {
+export default function ListMessages({profile, name, desc, type, onPress}) {
     return (
-        <View style={styles.container}>
+        <TouchableOpacity style={styles.container} onPress={onPress}>
             <Image source={profile} style={styles.avatar}/>
             <View style={styles.section}>
                 <Text style={styles.name}>{name}</Text>
@@ -15,7 +15,7 @@ export default function ListMessages({profile, name, desc, type}) {
             {
                 type === 'next' && <ICNext/>
             }
-        </View>
+        </TouchableOpacity>
     )
 }
 

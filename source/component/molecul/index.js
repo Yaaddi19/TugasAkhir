@@ -5,6 +5,7 @@ import DoctorCategory from './DoctorCategory'
 import RatedDoctor from './RatedDoctor'
 import NewsItem from './NewsItem'
 import ListMessages from './ListMessages'
+import ChatItem from './ChatItem'
 
 
 export {
@@ -15,4 +16,5 @@ export {
     RatedDoctor,
     NewsItem,
     ListMessages,
+    ChatItem,
 }
