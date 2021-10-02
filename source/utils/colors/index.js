@@ -5,8 +5,10 @@ const mainColors = {
     dark1 : '#112340',
     gray1 : '#7D8797',
     gray2 : '#EEEEEE',
+    gray3: '#EDFCFD',
     black1 : '#201E1E',
     green1 : '#A4EAE6',
+    green2 : '#0BCAD4',
     
 }
 

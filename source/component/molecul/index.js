@@ -6,6 +6,7 @@ import RatedDoctor from './RatedDoctor'
 import NewsItem from './NewsItem'
 import ListMessages from './ListMessages'
 import ChatItem from './ChatItem'
+import DarkHomeApp from './Header/DarkHomeApp'
 
 
 export {
@@ -17,4 +18,5 @@ export {
     NewsItem,
     ListMessages,
     ChatItem,
+    DarkHomeApp,
 }

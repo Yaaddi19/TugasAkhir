@@ -1,10 +1,15 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
+import { DarkHomeApp } from '..'
 import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'
 import { Button, Gap, } from '../../atom'
 
 export default function Header({onPress, title, type}) {
+    if ( type === 'dark-homeapp') {
+        return <DarkHomeApp/>
+    }
+
     return (
         <View style={styles.container(type)}>
             <Button type="icon-only" icon={type === 'homeapp' ? 'back-light' : 'back-dark'} onPress={onPress} />
