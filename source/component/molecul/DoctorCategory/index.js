@@ -1,10 +1,10 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 import { ICCat, ICDog } from '../../../assets'
 import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'
 
-export default function DoctorCategory({category}) {
+export default function DoctorCategory({category, onPress}) {
     const Icon = () => {
     if (category === 'dokter kucing'){
         return <ICCat style={styles.illustration} />
@@ -15,13 +15,13 @@ export default function DoctorCategory({category}) {
     return <ICCat style={styles.illustration} />
     }
     return (
-        <View style={styles.container}>
+        <TouchableOpacity style={styles.container} onPress={onPress}>
             <Icon />
             <View>
             <Text style={styles.label}>Saya butuh</Text>
             <Text style={styles.category}>{category}</Text>
             </View>
-        </View>
+        </TouchableOpacity>
     )
 }
 

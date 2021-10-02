@@ -1,6 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { ICBackDark } from '../../../assets'
+import { ICBackDark, ICBackLight } from '../../../assets'
 
 export default function IconOnly({onPress, icon}) {
 
@@ -9,7 +9,7 @@ export default function IconOnly({onPress, icon}) {
         return <ICBackDark/>
         }
         if (icon === 'back-light') {
-            return <ICBackDark />
+            return <ICBackLight />
         }
         return <ICBackDark/>
     }

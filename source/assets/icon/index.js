@@ -11,6 +11,8 @@ import ICLocationActive from './icon_maps_active.svg';
 import ICCat from './icon_cat.svg';
 import ICDog from './icon_dog.svg';
 import ICStar from './icon_star.svg';
+import ICNext from './icon_next.svg';
+import ICBackLight from './arrow_back_light.svg';
 
 export {ICTimbangan,
     ICBackDark,
@@ -24,4 +26,6 @@ ICLocation,
 ICLocationActive,
 ICCat,
 ICDog,
-ICStar,};
+ICStar,
+ICNext,
+ICBackLight,};

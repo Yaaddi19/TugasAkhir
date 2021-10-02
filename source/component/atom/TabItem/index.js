@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
         fontSize : 10,
         fontFamily : fonts.primary[600],
         color : active 
-        ? colors.text.inActive 
+        ? 'white' 
         : colors.text.noActive,
         marginTop : 4,
         }

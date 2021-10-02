@@ -8,7 +8,8 @@ import { GetStarted,
     UploadFoto,
     Home,
     Messages,
-    Location
+    Location,
+    ChooseDoctor
     } from '../pages';
 import { BottomNavigator } from '../component/molecul';
 
@@ -48,6 +49,9 @@ const Route = () => {
             options={{headerShown: false}}/>
             <Stack.Screen name="HomeApp" 
             component={HomeApp}
+            options={{headerShown: false}}/>
+            <Stack.Screen name="ChooseDoctor" 
+            component={ChooseDoctor}
             options={{headerShown: false}}/>
         </Stack.Navigator>
     )

@@ -1,9 +1,10 @@
 import React from 'react'
 import { Image, StyleSheet, Text, View } from 'react-native'
+import { ICNext } from '../../../assets'
 import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'
 
-export default function ListMessages({profile, name, desc}) {
+export default function ListMessages({profile, name, desc, type}) {
     return (
         <View style={styles.container}>
             <Image source={profile} style={styles.avatar}/>
@@ -11,6 +12,9 @@ export default function ListMessages({profile, name, desc}) {
                 <Text style={styles.name}>{name}</Text>
                 <Text style={styles.desc}>{desc}</Text>
             </View>
+            {
+                type === 'next' && <ICNext/>
+            }
         </View>
     )
 }
@@ -22,6 +26,7 @@ const styles = StyleSheet.create({
         borderBottomWidth : 1,
         color : colors.border,
         alignItems : 'center',
+        justifyContent : 'space-between'
     },
     avatar : {
         height : 46,
@@ -30,6 +35,7 @@ const styles = StyleSheet.create({
     },
     section : {
         marginLeft : 12,
+        flex : 1,
     },
     name : {
         fontSize : 16,

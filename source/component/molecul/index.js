@@ -4,6 +4,7 @@ import HomeProfile from './HomeProfile'
 import DoctorCategory from './DoctorCategory'
 import RatedDoctor from './RatedDoctor'
 import NewsItem from './NewsItem'
+import ListMessages from './ListMessages'
 
 
 export {
@@ -13,4 +14,5 @@ export {
     DoctorCategory,
     RatedDoctor,
     NewsItem,
+    ListMessages,
 }

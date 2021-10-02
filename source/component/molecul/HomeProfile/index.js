@@ -1,6 +1,5 @@
 import React from 'react'
 import { StyleSheet, Text, View, Image } from 'react-native'
-import { color } from 'react-native-reanimated'
 import { DummyUser } from '../../../assets'
 import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'

@@ -6,6 +6,8 @@ import UploadFoto from './UploadFoto';
 import Home from './Home';
 import Messages from './Messages';
 import Location from './Location';
+import ChooseDoctor from './ChooseDoctor';
+
 
 export { Splash,
 GetStarted,
@@ -14,4 +16,5 @@ Login,
 UploadFoto,
 Home,
 Messages,
-Location, }
+Location,
+ChooseDoctor, }

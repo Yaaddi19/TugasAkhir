@@ -1,7 +1,7 @@
 const mainColors = {
     pink1 : '#E06379',
     pink2 : '#F3A8FF',
-    white1 : '#FCFCFC',
+    // white1 : '#FCFCFC',
     dark1 : '#112340',
     gray1 : '#7D8797',
     gray2 : '#EEEEEE',

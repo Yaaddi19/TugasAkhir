@@ -6,7 +6,7 @@ import { colors } from '../../utils/colors';
 import { fonts } from '../../utils/fonts';
 import { JSONCategoryDoctor } from '../../assets';
 
-export default function Home() {
+export default function Home({navigation}) {
     return (
         <View style={styles.page}>
             <View style={styles.container}>
@@ -25,7 +25,8 @@ export default function Home() {
                                     return (
                                         <DoctorCategory 
                                         key={item.id}
-                                        category={item.category}/>
+                                        category={item.category}
+                                        onPress={() => navigation.navigate('ChooseDoctor')}/>
                                     )
                                 })
                             }
@@ -56,7 +57,7 @@ const styles = StyleSheet.create({
         flex : 1,
     },
     container : {
-        backgroundColor : colors.white,
+        backgroundColor : 'white',
         flex : 1,
         borderBottomLeftRadius : 20,
         borderBottomRightRadius : 20,
