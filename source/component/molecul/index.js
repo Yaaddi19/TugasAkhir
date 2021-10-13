@@ -7,7 +7,7 @@ import NewsItem from './NewsItem'
 import ListMessages from './ListMessages'
 import ChatItem from './ChatItem'
 import DarkHomeApp from './Header/DarkHomeApp'
-
+import InputChat  from './InputChat'
 
 export {
     Header,
@@ -19,4 +19,5 @@ export {
     ListMessages,
     ChatItem,
     DarkHomeApp,
+    InputChat,
 }

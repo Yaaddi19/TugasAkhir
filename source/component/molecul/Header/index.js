@@ -5,7 +5,7 @@ import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'
 import { Button, Gap, } from '../../atom'
 
-export default function Header({onPress, title, type}) {
+export default function Header({onPress, title, type, nama}) {
     if ( type === 'dark-homeapp') {
         return <DarkHomeApp/>
     }
@@ -36,4 +36,7 @@ const styles = StyleSheet.create({
         fontFamily : fonts.primary[600] ,
         color : type === 'homeapp' ? 'white' : colors.text.primary,
     }),
+    wrapper : {
+        flex : 1,
+    }
 })

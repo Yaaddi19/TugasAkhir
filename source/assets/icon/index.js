@@ -13,6 +13,8 @@ import ICDog from './icon_dog.svg';
 import ICStar from './icon_star.svg';
 import ICNext from './icon_next.svg';
 import ICBackLight from './arrow_back_light.svg';
+import ICSendActive from './icon_send_active.svg';
+import ICSend from './icon_send.svg';
 
 export {ICTimbangan,
     ICBackDark,
@@ -28,4 +30,6 @@ ICCat,
 ICDog,
 ICStar,
 ICNext,
-ICBackLight,};
+ICBackLight,
+ICSendActive,
+ICSend,};
