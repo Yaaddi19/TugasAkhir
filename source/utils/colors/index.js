@@ -22,6 +22,7 @@ export const colors = {
     black : 'black',
     border : mainColors.gray2,
     cardLight : mainColors.green1,
+    cardText : mainColors.green2,
     disable : mainColors.gray4,
     nondisable : mainColors.blue1,
     text : {

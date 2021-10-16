@@ -2,14 +2,17 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'
-import IsMe from './IsMe'
-import Other from './Other'
 
-export default function ChatItem({isMe}) {
-    if (isMe) {
-        return <IsMe/>
-    } 
-    return <Other />
+
+export default function IsMe() {
+    return (
+        <View style={styles.container}>
+        <View style={styles.contentChat}>
+        <Text style={styles.contentText}>Ibu  dokter, mau nanya tentang kucing boleh?</Text>    
+        </View>
+        <Text style={styles.contentDate}>16.00</Text>
+    </View>
+    )
 }
 
 const styles = StyleSheet.create({
