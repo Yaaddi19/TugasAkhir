@@ -13,7 +13,7 @@ export default function Home({navigation}) {
                 <ScrollView showsVerticalScrollIndicator={false}>
                     <View style={styles.wrapperSection}>
                         <Gap height={30} />
-                        <HomeProfile/>
+                        <HomeProfile onPress={() => navigation.navigate('UserProfile')}/>
                         <Text style={styles.welcome}>Mau Konsultansi dengan siapa hari ini ?</Text>
                     </View>
                 <View style={styles.wrapper}>

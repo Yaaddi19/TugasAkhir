@@ -7,9 +7,9 @@ import { fonts } from '../../../utils/fonts'
 export default function IsMe() {
     return (
         <View style={styles.container}>
-        <View style={styles.contentChat}>
-        <Text style={styles.contentText}>Ibu  dokter, mau nanya tentang kucing boleh?</Text>    
-        </View>
+            <View style={styles.contentChat}>
+            <Text style={styles.contentText}>Ibu  dokter, mau nanya tentang kucing boleh?</Text>    
+            </View>
         <Text style={styles.contentDate}>16.00</Text>
     </View>
     )

@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { DummyDoctor1, DummyDoctor2 } from '../../assets/dummy'
-import ListMessages from '../../component/molecul/ListMessages'
+import List from '../../component/molecul/List'
 import { colors } from '../../utils/colors'
 import { fonts } from '../../utils/fonts'
 
@@ -27,7 +27,7 @@ export default function Messages() {
                 {
                     doctors.map(doctor => {
                         return (
-                            <ListMessages
+                            <List
                             key={doctor.id}
                             profile={doctor.profile}
                             name={doctor.name}

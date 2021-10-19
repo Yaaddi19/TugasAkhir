@@ -1,7 +1,7 @@
 import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { DummyDoctor1 } from '../../assets';
-import { Header, ListMessages, } from '../../component/molecul';
+import { Header, List, } from '../../component/molecul';
 import { colors } from '../../utils/colors';
 
 export default function ChooseDoctor({navigation}) {
@@ -10,13 +10,13 @@ export default function ChooseDoctor({navigation}) {
             <Header title="Pilih Dokter Kucing"
             type='homeapp'
             onPress={() => navigation.goBack() }/>
-            <ListMessages 
+            <List 
             type = "next" 
             profile={DummyDoctor1}
             name="Dicky"
             desc="Pria"
             onPress={() => navigation.navigate('Chatting')} />
-            <ListMessages 
+            <List 
             type = "next" 
             profile={DummyDoctor1}
             name="Dicky"

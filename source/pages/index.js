@@ -8,6 +8,8 @@ import Messages from './Messages';
 import Location from './Location';
 import ChooseDoctor from './ChooseDoctor';
 import Chatting from './Chatting';
+import UserProfile from './UserProfile';
+
 
 
 export { Splash,
@@ -19,4 +21,5 @@ Home,
 Messages,
 Location,
 ChooseDoctor,
-Chatting, }
+Chatting,
+UserProfile, }

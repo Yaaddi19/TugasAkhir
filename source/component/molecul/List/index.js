@@ -1,13 +1,28 @@
 import React from 'react'
 import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
-import { ICNext } from '../../../assets'
+import { ICEditProfile, ICHelpCenter, ICLanguage, ICNext, ICRate } from '../../../assets'
 import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'
 
-export default function ListMessages({profile, name, desc, type, onPress}) {
+export default function List({profile, name, desc, type, onPress, icon}) {
+    const Icon = () => {
+        if (icon === 'edit-profile'){
+            return <ICEditProfile/>
+        }
+        if (icon === 'language'){
+            return <ICLanguage/>
+        }
+        if (icon === 'rate'){
+            return <ICRate/>
+        }
+        if (icon === 'help-center'){
+            return <ICHelpCenter/>
+        }
+        return <ICEditProfile />
+    }
     return (
         <TouchableOpacity style={styles.container} onPress={onPress}>
-            <Image source={profile} style={styles.avatar}/>
+            {icon ? <Icon/> :  <Image source={profile} style={styles.avatar}/> }
             <View style={styles.section}>
                 <Text style={styles.name}>{name}</Text>
                 <Text style={styles.desc}>{desc}</Text>

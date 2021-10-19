@@ -15,6 +15,11 @@ import ICNext from './icon_next.svg';
 import ICBackLight from './arrow_back_light.svg';
 import ICSendActive from './icon_send_active.svg';
 import ICSend from './icon_send.svg';
+import ICEditProfile from './icon_editprofile.svg'
+import ICLanguage from './icon_language.svg'
+import ICRate from './ic_rate.svg'
+import ICHelpCenter from './ic_helpcenter.svg'
+
 
 export {ICTimbangan,
     ICBackDark,
@@ -32,4 +37,8 @@ ICStar,
 ICNext,
 ICBackLight,
 ICSendActive,
-ICSend,};
+ICSend,
+ICEditProfile,
+ICLanguage,
+ICRate,
+ICHelpCenter,};

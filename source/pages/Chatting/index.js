@@ -4,10 +4,13 @@ import { ChatItem, Header, InputChat } from '../../component/molecul'
 import { colors } from '../../utils/colors'
 import { fonts } from '../../utils/fonts'
 
-export default function Chatting() {
+export default function Chatting({navigation}) {
     return (
         <View style={styles.page}>
-            <Header  title="Dicky" type="homeapp"/>
+            <Header title="Dicky"
+            type="primary-homeapp" 
+            onPress={() => navigation.goBack() }
+            />
             <View style={styles.content}>
             <Text style={styles.chatdate}>Minggu, 3 Oktober 2021</Text>
             <ChatItem isMe/>
