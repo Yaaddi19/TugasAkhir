@@ -9,6 +9,8 @@ import DarkHomeApp from './Header/DarkHomeApp'
 import InputChat  from './InputChat'
 import Profile from './Profile'
 import List from './List'
+import ProfileItem from './ProfileItem'
+
 
 export {
     Header,
@@ -22,4 +24,5 @@ export {
     InputChat,
     Profile,
     List,
+    ProfileItem,
 }

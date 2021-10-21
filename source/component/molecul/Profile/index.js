@@ -46,9 +46,11 @@ const styles = StyleSheet.create({
         fontFamily : fonts.primary[600],
         color : colors.text.primary,
         marginTop : 16,
+        textAlign : 'center',
     },
     profesi : {
         fontSize : 16,
+        textAlign : 'center',
         fontFamily : fonts.primary[600],
         color : colors.text.primary,
         marginTop : 2,

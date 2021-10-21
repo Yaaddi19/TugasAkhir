@@ -3,10 +3,11 @@ import { Image, ScrollView, StyleSheet, Text, View } from 'react-native'
 import { Button, Gap, Input } from '../../component/atom'
 import { Header, Profile } from '../../component/molecul'
 
-export default function EditProfile() {
+export default function EditProfile({navigation}) {
     return (
         <View style={styles.page}>
-            <Header title="Edit Profile" />
+            <Header title="Edit Profile"
+            onPress={() => navigation.goBack() } />
             <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={styles.container}>
                     <Profile />

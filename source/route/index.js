@@ -13,6 +13,7 @@ import { GetStarted,
     Chatting,
     UserProfile,
     EditProfile,
+    DoctorProfile,
     } from '../pages';
 import { BottomNavigator } from '../component/molecul';
 
@@ -64,6 +65,9 @@ const Route = () => {
             options={{headerShown: false}}/>
             <Stack.Screen name="EditProfile" 
             component={EditProfile}
+            options={{headerShown: false}}/>
+            <Stack.Screen name="DoctorProfile" 
+            component={DoctorProfile}
             options={{headerShown: false}}/>
         </Stack.Navigator>
     )
