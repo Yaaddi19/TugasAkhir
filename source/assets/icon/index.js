@@ -19,6 +19,7 @@ import ICEditProfile from './icon_editprofile.svg'
 import ICLanguage from './icon_language.svg'
 import ICRate from './ic_rate.svg'
 import ICHelpCenter from './ic_helpcenter.svg'
+import ICRemovePhoto from './icon_remove_photo';
 
 
 export {ICTimbangan,
@@ -41,4 +42,5 @@ ICSend,
 ICEditProfile,
 ICLanguage,
 ICRate,
-ICHelpCenter,};
+ICHelpCenter,
+ICRemovePhoto,};

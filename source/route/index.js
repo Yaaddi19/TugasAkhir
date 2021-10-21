@@ -12,6 +12,7 @@ import { GetStarted,
     ChooseDoctor,
     Chatting,
     UserProfile,
+    EditProfile,
     } from '../pages';
 import { BottomNavigator } from '../component/molecul';
 
@@ -60,6 +61,9 @@ const Route = () => {
             options={{headerShown: false}}/>
             <Stack.Screen name="UserProfile" 
             component={UserProfile}
+            options={{headerShown: false}}/>
+            <Stack.Screen name="EditProfile" 
+            component={EditProfile}
             options={{headerShown: false}}/>
         </Stack.Navigator>
     )
