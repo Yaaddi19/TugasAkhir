@@ -9,7 +9,9 @@ export default function UserProfile({navigation}) {
             <Header title="Profile"
             onPress={() => navigation.goBack() } />
             <Gap height={10} />
-            <Profile/>
+            <Profile
+            name="Yadi"
+            profesi="Mahasiswa" />
             <Gap height={14} />
             <List name="Edit Profile"
             desc="Last Update Yesterday"

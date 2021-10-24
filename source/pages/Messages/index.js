@@ -5,7 +5,7 @@ import List from '../../component/molecul/List'
 import { colors } from '../../utils/colors'
 import { fonts } from '../../utils/fonts'
 
-export default function Messages() {
+export default function Messages({navigation}) {
     const [doctors] = useState([
         {
             id : 1,
@@ -31,7 +31,8 @@ export default function Messages() {
                             key={doctor.id}
                             profile={doctor.profile}
                             name={doctor.name}
-                            desc={doctor.desc} />
+                            desc={doctor.desc}
+                            onPress={() => navigation.navigate('Chatting')} />
                         )
                     })
                 }

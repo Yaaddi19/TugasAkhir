@@ -3,10 +3,10 @@ import { StyleSheet, Text, View } from 'react-native'
 import { Button, Gap } from '../../component/atom'
 import { Header, Profile, ProfileItem } from '../../component/molecul'
 
-export default function DoctorProfile() {
+export default function DoctorProfile({navigation}) {
     return (
         <View style={styles.page}>
-            <Header title="Profile" />
+            <Header title="Profile" onPress={() => navigation.goBack()} />
             <Profile 
             name="Dicky"
             profesi="Dokter Kucing"
@@ -26,7 +26,8 @@ export default function DoctorProfile() {
             />
             <Gap height={24}/>
             <View style={styles.container}>
-                <Button title="Mulai Konsultasi" />
+                <Button title="Mulai Konsultasi"
+                onPress={() => navigation.navigate('Chatting')} />
             </View>
         </View>
     )

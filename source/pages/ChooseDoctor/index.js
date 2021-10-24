@@ -7,7 +7,7 @@ import { colors } from '../../utils/colors';
 export default function ChooseDoctor({navigation}) {
     return (
         <View style={styles.container}>
-            <Header title="Pilih Dokter Kucing"
+            <Header title="Pilih Dokter"
             type='homeapp'
             onPress={() => navigation.goBack() }/>
             <List 

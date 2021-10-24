@@ -10,7 +10,8 @@ export default function EditProfile({navigation}) {
             onPress={() => navigation.goBack() } />
             <ScrollView showsVerticalScrollIndicator={false}>
                 <View style={styles.container}>
-                    <Profile />
+                    <Profile
+                    isRemove />
                     <Gap height={26} />
                     <Input title="Full Name" />
                     <Gap height={24} />
@@ -20,7 +21,8 @@ export default function EditProfile({navigation}) {
                     <Gap height={24} />
                     <Input title="Password" />
                     <Gap height={40} />
-                    <Button title="Save Profile" />
+                    <Button title="Save Profile"
+                    onPress={() => navigation.goBack('UserProfile')} />
                 </View>
             </ScrollView>
         </View>

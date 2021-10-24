@@ -35,7 +35,7 @@ const HomeApp = () => {
 
 const Route = () => {
     return (
-        <Stack.Navigator initialRouteName="HomeApp">
+        <Stack.Navigator initialRouteName="GetStarted">
             <Stack.Screen name="Splash" 
             component={Splash}
             options={{headerShown: false}}/>

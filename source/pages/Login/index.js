@@ -21,7 +21,8 @@ export default function Login({navigation}) {
             <Gap height={110} />
             <Link title="Create New Account" 
             size={16}
-            align="center" />
+            align="center"
+            onPress={() => navigation.navigate('Register')} />
         </View>
     )
 }

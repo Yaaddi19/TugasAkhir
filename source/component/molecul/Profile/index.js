@@ -4,12 +4,12 @@ import { DummyUser, ICRemovePhoto } from '../../../assets'
 import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'
 
-export default function Profile({name, profesi}) {
+export default function Profile({name, profesi, isRemove}) {
     return (
         <View style={styles.container}>
             <View style={styles.borderavatar}>
                 <Image source={DummyUser} style={styles.avatar} />
-                <ICRemovePhoto style={styles.removePhoto}/>
+                { isRemove && <ICRemovePhoto style={styles.removePhoto}/> } 
             </View>
             { name && (
                 <View>

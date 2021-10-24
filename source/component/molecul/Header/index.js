@@ -11,7 +11,7 @@ export default function Header({onPress, title, type, desc }) {
         return <DarkHomeApp/>
     }
     if (type === 'primary-homeapp'){
-        return <PrimaryHome />
+        return <PrimaryHome onPress={onPress} />
     } 
     return (
         <View style={styles.container(type)}>

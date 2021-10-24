@@ -27,7 +27,8 @@ export default function UploadFoto({navigation}) {
                         <Gap height={30}/>
                     <Link title="Skip for this" 
                     align='center'
-                    size={16} />
+                    size={16}
+                    onPress={() => navigation.replace('HomeApp')} />
                 </View>
             </View>
         </View>
