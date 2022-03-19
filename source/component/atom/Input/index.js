@@ -4,11 +4,11 @@ import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'
 
 
-export default function Input({title}) {
+export default function Input({ title, changeData}) {
     return (
         <View>
             <Text style={styles.textInput}>{title}</Text>
-            <TextInput style={styles.input} />
+            <TextInput onChangeText={changeData} style={styles.input} />
         </View>
     )
 }
