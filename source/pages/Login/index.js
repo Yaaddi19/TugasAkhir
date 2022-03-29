@@ -11,11 +11,6 @@ export default function Login({navigation}) {
     const [ password, setPassword ] = useState("")
 
 
-  useEffect(() => {
-   
-  }, []);
-
-
   const onLogin = () => {
 
     console.log("email", email);
