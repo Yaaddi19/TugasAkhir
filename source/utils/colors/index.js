@@ -40,5 +40,9 @@ export const colors = {
             background : mainColors.pink2,
             text : 'black',
         },
+        disable : {
+            background : mainColors.gray1,
+            text : 'white',
+        }
     },
 };

@@ -1,12 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Image, StyleSheet, Text, View } from 'react-native'
-import { ICPlus, ILNullFoto } from '../../assets'
+import { ICPlus, ICRemovePhoto, ILNullFoto } from '../../assets'
 import { Button, Gap, Link } from '../../component/atom'
 import { Header } from '../../component/molecul'
 import { colors } from '../../utils/colors'
 import { fonts } from '../../utils/fonts'
 
 export default function UploadFoto({navigation}) {
+    const  [setPlus, setRemove] = useState(false); 
     return (
         <View style={styles.page}>
             <Header title="Upload Foto"
@@ -16,13 +17,16 @@ export default function UploadFoto({navigation}) {
                     <View style={styles.containerfoto}>
                         <Image source={ILNullFoto}
                         style={styles.nullfoto} />
-                        <ICPlus style={styles.addplus} />
+                        {setPlus && <ICRemovePhoto style={styles.addplus} />}
+                        {!setPlus && <ICPlus style={styles.addplus} /> }
                     </View>
                     <Text style={styles.textnama}>Yadi</Text>
                     <Text style={styles.textprofesi}>Mahasiswa</Text>
                 </View>
                 <View>
-                    <Button title="Upload and Continue"
+                    <Button 
+                    disable
+                    title="Upload and Continue"
                     onPress={() => navigation.replace('HomeApp') } />
                         <Gap height={30}/>
                     <Link title="Skip for this" 
