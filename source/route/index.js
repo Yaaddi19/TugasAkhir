@@ -35,7 +35,7 @@ const HomeApp = () => {
 
 const Route = () => {
     return (
-        <Stack.Navigator initialRouteName="UploadFoto">
+        <Stack.Navigator initialRouteName="HomeApp">
             <Stack.Screen name="Splash" 
             component={Splash}
             options={{headerShown: false}}/>
