@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "733461959868",
+    "firebase_url": "https://tugasakhir-36969-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "tugasakhir-36969",
+    "storage_bucket": "tugasakhir-36969.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:733461959868:android:101a8b13feba8b8ef1ecb9",
+        "android_client_info": {
+          "package_name": "com.tugasakhir"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "733461959868-200bjai9836te3t6nbuv6kco0j7bpsm5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgAxX-MebYAGSeXpRu52cihhxBuE0zIwA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "733461959868-200bjai9836te3t6nbuv6kco0j7bpsm5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

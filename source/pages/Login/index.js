@@ -45,7 +45,6 @@ export default function Login({navigation}) {
 
   return (
     <View style={styles.page}>
-      <ICTimbangan />
       <Gap height={66} />
       <Input title="Email Address"
        changeData={(text) => setEmail(text)}/>

@@ -40,7 +40,7 @@ export default function Register({navigation}) {
                   alert("error")
               } else {
                   //alert("success")
-                  navigation.navigate('UploadFoto');
+                  navigation.navigate('Login');
               }
      
               console.log('ini', json);

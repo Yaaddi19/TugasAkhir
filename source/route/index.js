@@ -35,7 +35,7 @@ const HomeApp = () => {
 
 const Route = () => {
     return (
-        <Stack.Navigator initialRouteName="GetStarted">
+        <Stack.Navigator initialRouteName="HomeApp">
             <Stack.Screen name="Splash" 
             component={Splash}
             options={{headerShown: false}}/>
@@ -48,9 +48,9 @@ const Route = () => {
             <Stack.Screen name="Login" 
             component={Login}
             options={{headerShown: false}}/>
-            <Stack.Screen name="UploadFoto" 
+            {/* <Stack.Screen name="UploadFoto" 
             component={UploadFoto}
-            options={{headerShown: false}}/>
+            options={{headerShown: false}}/> */}
             <Stack.Screen name="HomeApp" 
             component={HomeApp}
             options={{headerShown: false}}/>
