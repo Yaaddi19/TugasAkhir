@@ -1,28 +1,42 @@
-import React from 'react'
-import { Image, StyleSheet, Text, View } from 'react-native'
-import { ICPlus, ILNullFoto } from '../../assets'
+import React, { useState } from 'react'
+import { Image, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
+import { ICPlus, ICRemovePhoto, ILNullFoto } from '../../assets'
 import { Button, Gap, Link } from '../../component/atom'
 import { Header } from '../../component/molecul'
 import { colors } from '../../utils/colors'
 import { fonts } from '../../utils/fonts'
+import * as ImagePicker from 'react-native-image-picker';
 
 export default function UploadFoto({navigation}) {
+    const  [setPlus, setRemove] = useState(false);
+    const [foto, setFoto] = useState(ILNullFoto); 
+    const getImage = () => {
+        ImagePicker.launchImageLibrary({}, response => {            
+            console.log('response: ', response)
+            const source = {uri: response.uri}
+            setFoto(source)
+            setRemove(true)
+        });
+    }
     return (
         <View style={styles.page}>
             <Header title="Upload Foto"
             onPress={() => navigation.goBack() } />
             <View style={styles.container}> 
                 <View style={styles.containerprofile}>
-                    <View style={styles.containerfoto}>
-                        <Image source={ILNullFoto}
+                    <TouchableOpacity style={styles.containerfoto} onPress={getImage} >
+                        <Image source={foto}
                         style={styles.nullfoto} />
-                        <ICPlus style={styles.addplus} />
-                    </View>
+                        {setPlus && <ICRemovePhoto style={styles.addplus} />}
+                        {!setPlus && <ICPlus style={styles.addplus} /> }
+                    </TouchableOpacity>
                     <Text style={styles.textnama}>Yadi</Text>
                     <Text style={styles.textprofesi}>Mahasiswa</Text>
                 </View>
                 <View>
-                    <Button title="Upload and Continue"
+                    <Button 
+                    disable={!setPlus}
+                    title="Upload and Continue"
                     onPress={() => navigation.replace('HomeApp') } />
                         <Gap height={30}/>
                     <Link title="Skip for this" 
@@ -64,6 +78,7 @@ const styles = StyleSheet.create({
     nullfoto : {
         width : 110,
         height : 110,
+        borderRadius : 110/2,
     },
     addplus : {
         position : 'absolute',
