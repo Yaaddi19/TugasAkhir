@@ -6,7 +6,7 @@ import { fonts } from '../../../utils/fonts'
 import { Button, Gap, } from '../../atom'
 import PrimaryHome from './PrimaryHome'
 
-export default function Header({onPress, title, type, desc }) {
+export default function Header({onPress, title, type, desc, navigation}) {
     if ( type === 'dark-homeapp') {
         return <DarkHomeApp/>
     }

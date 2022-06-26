@@ -4,13 +4,13 @@ import { DummyDoctor1 } from '../../../assets'
 import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'
 
-export default function Other() {
+export default function Other({deskripsi}) {
     return (
         <View style={styles.container}>
             <Image source={DummyDoctor1} style={styles.avatar} />
             <View>
                 <View style={styles.contentChat}>
-                    <Text style={styles.contentText}>Ibu  dokter, mau nanya tentang kucing boleh?</Text>    
+                    <Text style={styles.contentText}>{deskripsi ?? ""}</Text>    
                 </View>
                     <Text style={styles.contentDate}>16.00</Text>
                 </View>

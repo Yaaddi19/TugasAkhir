@@ -10,15 +10,15 @@ export default function Messages({navigation}) {
         {
             id : 1,
             profile : DummyDoctor1,
-            name : 'Dicky',
-            desc : 'Baik terima kasih atas wakt...'
+            name : 'Dokter',
+            desc : 'Ada yang bisa saya bantu? ...'
         },
-        {
-            id : 2,
-            profile : DummyDoctor2,
-            name : 'Dicky',
-            desc : 'Baik terima kasih atas wakt...'
-        },
+        // {
+        //     id : 2,
+        //     profile : DummyDoctor2,
+        //     name : 'Dicky',
+        //     desc : 'Baik terima kasih atas wakt...'
+        // },
     ])
     return (
         <View style={styles.page}>

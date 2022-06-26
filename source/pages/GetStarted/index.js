@@ -12,11 +12,11 @@ export default function GetStarted({navigation}) {
                 <Text></Text>
             </View>
             <View>
-                <Button title="Login" 
+                <Button title="Daftar Akun" 
                 onPress={() => navigation.navigate('Register')} />
                 <Gap height={16}/>
                 <Button type="secondary" 
-                title="Daftar Akun"
+                title="Login"
                 onPress={() => navigation.replace('Login')} />
             </View>
         </ImageBackground>

@@ -26,7 +26,7 @@ export default function Home({navigation}) {
                                         <DoctorCategory 
                                         key={item.id}
                                         category={item.category}
-                                        onPress={() => navigation.navigate('ChooseDoctor')}/>
+                                        onPress={() => navigation.navigate('Chatting')}/>
                                     )
                                 })
                             }
@@ -41,7 +41,7 @@ export default function Home({navigation}) {
                     profesion="Dokter Kucing"
                     avatar={DummyDoctor1}
                     onPress={() => navigation.navigate('DoctorProfile') }/>
-                    <RatedDoctor 
+                    {/* <RatedDoctor 
                     name="Saiful"
                     profesion="Dokter Anjing"
                     avatar={DummyDoctor1}
@@ -50,7 +50,7 @@ export default function Home({navigation}) {
                     name="Santuy"
                     profesion="Dokter Capung"
                     avatar={DummyDoctor1}
-                    onPress={() => navigation.navigate('DoctorProfile') }/>
+                    onPress={() => navigation.navigate('DoctorProfile') }/> */}
                     <Text style={styles.label} >Good News</Text>
                 </View>
                 <NewsItem/>

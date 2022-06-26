@@ -1,11 +1,35 @@
 import React from 'react'
-import { ImageBackground, StyleSheet, Text, View } from 'react-native'
+import { ImageBackground, StyleSheet, Text, View, Platform, Linking } from 'react-native'
 import { DummyHospital1, ILHospitalBG } from '../../assets'
 import ListLocation from '../../component/molecul/ListLocation'
 import { colors } from '../../utils/colors'
 import { fonts } from '../../utils/fonts'
 
 export default function Location() {
+
+    const preLock = () => {
+        const url = Platform.select({
+            ios: `comgooglemaps://?center=-6.181411,106.806402&q=-6.181411,106.806402&zoom=14&views=traffic"`,
+            android: `geo://?q=-6.181411,106.806402`,
+        });
+        Linking.canOpenURL(url)
+            .then((supported) => {
+                if (supported) {
+                    return Linking.openURL(url);
+                } else {
+                    const browser_url = `https://www.google.de/maps/@-6.181411,106.806402`;
+                    return Linking.openURL(browser_url);
+                }
+            })
+            .catch(() => {
+                if (Platform.OS === 'ios') {
+                    Linking.openURL(
+                        `maps://?q=-6.181411,106.806402`,
+                    );
+                }
+            });
+    }
+
     return (
         <View style={styles.page}>
             <ImageBackground source={ILHospitalBG} style={styles.avatar}>
@@ -13,7 +37,8 @@ export default function Location() {
             </ImageBackground>
             <View style={styles.container}>
                 <ListLocation
-                hospital="Klinik Hewan" 
+                hospital="Klinik Hewan"
+                onPress={preLock}
                 name="Tomang Pulo" 
                 address="Jln. Tomang Raya"
                 pic={DummyHospital1} />

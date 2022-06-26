@@ -1,18 +1,18 @@
 import React from 'react'
-import { Image, ImageBackground, StyleSheet, Text, View } from 'react-native'
+import { Image, ImageBackground, StyleSheet, Text, View, TouchableOpacity} from 'react-native'
 import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'
 
-export default function ListLocation({hospital, name, address, pic}) {
+export default function ListLocation({hospital, name, address, pic, onPress}) {
     return (
-        <View style={styles.container}>
+        <TouchableOpacity onPress={onPress} style={styles.container}>
             <Image source={pic} style={styles.avatar}/>
             <View>
             <Text style={styles.title}>{hospital}</Text>
             <Text style={styles.title}>{name}</Text>
             <Text style={styles.address}>{address}</Text>
             </View>
-        </View>
+        </TouchableOpacity>
     )
 }
 

@@ -4,11 +4,11 @@ import { colors } from '../../../utils/colors'
 import { fonts } from '../../../utils/fonts'
 
 
-export default function IsMe() {
+export default function IsMe({ deskripsi }) {
     return (
         <View style={styles.container}>
             <View style={styles.contentChat}>
-            <Text style={styles.contentText}>Ibu  dokter, mau nanya tentang kucing boleh?</Text>    
+            <Text style={styles.contentText}>{deskripsi ?? ""}</Text>    
             </View>
         <Text style={styles.contentDate}>16.00</Text>
     </View>
